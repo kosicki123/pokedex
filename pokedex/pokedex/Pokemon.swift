@@ -9,8 +9,8 @@
 import Foundation
 
 class Pokemon {
-    private var name: String!
-    private var pokedexId: Int!
+    var name: String!
+    var pokedexId: Int!
     
     init(name: String, pokedexId: Int) {
         self.name = name
