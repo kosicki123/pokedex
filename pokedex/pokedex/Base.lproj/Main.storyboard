@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Pokemon Solid.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,9 +25,36 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gA8-5e-iMd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5i-bc-TYa">
+                                        <rect key="frame" x="206" y="22" width="188" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="02G-LS-loD"/>
+                                            <constraint firstAttribute="width" constant="188" id="ZuE-u0-3hN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-8k-Lxd">
+                                        <rect key="frame" x="561" y="23" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="PxD-TS-GMR"/>
+                                            <constraint firstAttribute="width" constant="31" id="bFk-Ja-sld"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT9-pg-fDk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="V2K-1n-QU8"/>
+                                    <constraint firstItem="d5i-bc-TYa" firstAttribute="centerY" secondItem="gA8-5e-iMd" secondAttribute="centerY" constant="7" id="eZX-cN-xzB"/>
+                                    <constraint firstItem="d5i-bc-TYa" firstAttribute="centerX" secondItem="gA8-5e-iMd" secondAttribute="centerX" id="kCr-hd-ASs"/>
+                                    <constraint firstAttribute="trailing" secondItem="nuw-8k-Lxd" secondAttribute="trailing" constant="8" id="tSk-D4-Aw0"/>
+                                    <constraint firstItem="nuw-8k-Lxd" firstAttribute="top" secondItem="gA8-5e-iMd" secondAttribute="top" constant="23" id="vyV-m7-B29"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2FO-8D-cCK">
@@ -50,7 +82,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="297" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-2u-05S">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="89"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmN-ix-tm1">
                                                     <rect key="frame" x="0.0" y="89" width="110" height="21"/>
@@ -69,10 +101,11 @@
                                         <constraints>
                                             <constraint firstItem="XmN-ix-tm1" firstAttribute="leading" secondItem="Kaz-Cz-gVz" secondAttribute="leading" id="DMR-QT-m0Z"/>
                                             <constraint firstAttribute="trailing" secondItem="XmN-ix-tm1" secondAttribute="trailing" id="EQL-ZO-CUh"/>
-                                            <constraint firstAttribute="bottom" secondItem="nAt-2u-05S" secondAttribute="bottom" constant="20" id="F9j-XV-prl"/>
+                                            <constraint firstAttribute="bottom" secondItem="nAt-2u-05S" secondAttribute="bottom" constant="21" id="F9j-XV-prl"/>
                                             <constraint firstItem="nAt-2u-05S" firstAttribute="top" secondItem="Kaz-Cz-gVz" secondAttribute="top" id="TRO-P7-WcW"/>
                                             <constraint firstAttribute="trailing" secondItem="nAt-2u-05S" secondAttribute="trailing" id="W9z-yF-ELm"/>
                                             <constraint firstItem="nAt-2u-05S" firstAttribute="leading" secondItem="Kaz-Cz-gVz" secondAttribute="leading" id="bNU-6h-4k6"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="XmN-ix-tm1" secondAttribute="bottom" constant="-8" id="mhw-Mo-Jfl"/>
                                             <constraint firstItem="XmN-ix-tm1" firstAttribute="top" secondItem="Kaz-Cz-gVz" secondAttribute="top" constant="89" id="rGH-Qu-HC1"/>
                                         </constraints>
                                         <connections>
@@ -108,11 +141,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="311" y="436"/>
         </scene>
     </scenes>
     <resources>
         <image name="297" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="100" height="100"/>
     </resources>
 </document>
