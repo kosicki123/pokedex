@@ -23,7 +23,7 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Italic</string>
         </mutableArray>
-        <mutableArray key="pokemon.ttf">
+        <mutableArray key="Pokemon Solid.ttf">
             <string>PokemonSolidNormal</string>
         </mutableArray>
     </customFonts>
@@ -330,6 +330,9 @@ The methods in the UIConstraintBasedLayoutDeb</string>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Base Attack:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMn-AB-z5H">
                                                 <rect key="frame" x="280" y="0.0" width="140" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="0zI-Aw-9DU"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                                 <color key="textColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -414,6 +417,7 @@ The methods in the UIConstraintBasedLayoutDeb</string>
                         <outlet property="currentEvoImageView" destination="UXL-qH-u8P" id="R7q-ju-HAw"/>
                         <outlet property="defenseLabel" destination="1Ba-cB-mw3" id="DHe-eB-hKU"/>
                         <outlet property="descriptionLabel" destination="mKS-OM-LTu" id="Rah-8e-leJ"/>
+                        <outlet property="evoLabel" destination="YQK-xB-DF0" id="sxJ-Tt-JVt"/>
                         <outlet property="heightLabel" destination="J5U-SM-lEI" id="FWH-fd-1do"/>
                         <outlet property="mainImageView" destination="pHu-e9-Fmo" id="7IM-OL-mex"/>
                         <outlet property="nameLabel" destination="rSz-ih-Ser" id="gz8-Be-PMO"/>
