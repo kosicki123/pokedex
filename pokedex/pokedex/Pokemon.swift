@@ -11,6 +11,13 @@ import Foundation
 class Pokemon {
     var name: String!
     var pokedexId: Int!
+    var description: String!
+    var type: String!
+    var defense: String!
+    var height: String!
+    var weight: String!
+    var attack: String!
+    var nextEvolutionText: String!
     
     init(name: String, pokedexId: Int) {
         self.name = name
